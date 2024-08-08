@@ -1,113 +1,108 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-*{
-    //configurações globais
+*{//configurações globais
     font-family: 'Inter', 'sans-serif';
     margin: 0;
+    box-sizing: border-box;
 }
+    $font-pink: #F587DD;
+    $bg-blue: #BAF3F6;
+    $font-size-36: 36px;
+    $font-weight-700: 700;
+    $line-height-43: 43.57px;
+    $font-weight-400: 400;
+    $font-size-24: 24px;
+    $line-height-29: 29.05px;
+
+
 img{
     width: 237px;
     height: 229px;
-    position: absolute;
-    top: 116px;
-    left: 120px;
+    margin-top: 116px;
+    margin-left: 120px;
     border-radius: 150px;
 }
-.nome{
+//configurando os H1
+h1{
     width: 388px;
     height: 50px;
-    position: absolute;
-    top: 384px;
-    left: 119px;
-    font-weight: 700;
-    line-height: 43.57px;
-    color: #F587DD;
-    line-height: 29.05px;
-    font-size: 36px;
+    font-weight: $font-weight-700;
+    font-size: $font-size-36;
+    line-height: $line-height-43;
+    color: $font-pink;
 }
 //configuração da bio e das listas
 p, li{
-    font-weight: 400;
+    font-weight: $font-weight-400;
     color: #000000;
-    line-height: 29.05px;
-    font-size: 24px;
+    line-height: $line-height-29;
+    font-size: $font-size-24;
+}
+.nome{
+    margin-top: 50px;
+    margin-left: 119px;
 }
 .descricao{
+    margin-top: 25px;
+    margin-left: 119px;
     width: 1216px;
     height: 66px;
-    position: absolute;
-    top: 452px;
-    left: 119px;
-    
 }
 .cidade{
     width: 1216px;
     height: 66px;
-    position: absolute;
-    top: 536px;
-    left: 120px;
+    margin-top: 12px;
+    margin-left: 120px;
 }
-//configurando os h1 dos jogos e musicas favoritos
-.favs{
-    width: 388px;
-    height: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 43.57px;
-    color: #F587DD;
-}
-.jogo{
-    position: absolute;
-    top: 631px;
-    left: 120px;
-}
-.musica{
-    position: absolute;
-    top: 814px;
-    left: 119px;
-}
-.retangulo1{
-    background-color: #BAF3F6;
-    width: 100%; //OBS: coloquei height 100% pra poder preencher a tela inteira, nos tres retangulos
-    height: 167px;
-    position: absolute;
+.games{
     top: 620px;
-}
-.lista1{
-    width: 1216px;
-    height: 66px;
-    position: absolute;
-    top: 682px;
-    left: 120px;
-}
-.retangulo2{
-    background-color: #BAF3F6;
-    width: 100%;
+    background-color: $bg-blue;
+    width: 1468px;
     height: 167px;
-    position: absolute;
-    top: 803px;
+    .lista-games{
+        width: 1216px;
+        height: 66px;
+        position: relative;
+        left: 104px;
+        top: 10px;
+    }
+    h1{
+        position: relative;
+        left: 119px;
+        top: 10px;
+    }
 }
-.lista2{
-    width: 1216px;
-    height: 51px;
-    position: absolute;
-    top: 864px;
-    left: 104px;
+.musicas{
+    margin-top: 20px;
+    background-color: $bg-blue;
+    width: 1468px;
+    height: 167px;
+    .lista-musicas{
+        width: 1216px;
+        height: 51px;
+        position: relative;
+        left: 104px;
+        top: 10px;
+    }
+    h1{
+        position: relative;
+        left: 119px;
+        top: 10px;
+    }
 }
-.retangulo3{
+footer{
     background-color: #D9D9D9;
-    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 8px;
+    width: 1468px;
     height: 39px;
-    position: absolute;
-    top: 985px;
-}
-h3{
-    width: 264px;
-    height: 21px;
-    position: absolute;
-    top: 994px;
-    left: 588px;
-    color: #000000;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16.94px;
+    bottom: 0;
+    h3{
+        width: 264px;
+        height: 21px;
+        color: #000000;
+        font-size: 14px;
+    }
 }
