@@ -1,23 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 * {
-  font-family: "Inter", "sans-serif";
+  padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-img {
-  width: 237px;
-  height: 229px;
-  margin-top: 116px;
-  margin-left: 120px;
-  border-radius: 150px;
+body {
+  font-family: "Inter", "sans-serif";
 }
 
 h1 {
-  width: 388px;
-  height: 50px;
   font-weight: 700;
-  font-size: 36px;
   line-height: 43.57px;
   color: #F587DD;
 }
@@ -25,81 +18,55 @@ h1 {
 p, li {
   font-weight: 400;
   color: #000000;
-  line-height: 29.05px;
-  font-size: 24px;
+  line-height: 25px;
+  font-size: 18px;
 }
 
-.nome {
-  margin-top: 50px;
-  margin-left: 119px;
+main {
+  height: 95vh;
 }
-
-.descricao {
-  margin-top: 25px;
-  margin-left: 119px;
-  width: 1216px;
-  height: 66px;
+main img {
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  margin-top: 2.5%;
+  margin-left: 7%;
 }
-
-.cidade {
-  width: 1216px;
-  height: 66px;
-  margin-top: 12px;
-  margin-left: 120px;
+main .nome {
+  margin-top: 0.5em;
+  margin-left: 7%;
 }
-
-.games {
-  top: 620px;
+main .descricao, main .cidade {
+  margin: 0.5em 7% 0.9em 7%;
+}
+main .games-container > h1, main .musicas-container > h1 {
+  margin-left: 7%;
+}
+main .lista-games > li, main .lista-musicas > li {
+  margin-left: 9%;
+}
+main .games-container {
   background-color: #BAF3F6;
-  width: 1468px;
-  height: 167px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 100vw;
+  padding-bottom: 5px;
 }
-.games .lista-games {
-  width: 1216px;
-  height: 66px;
-  position: relative;
-  left: 104px;
-  top: 10px;
-}
-.games h1 {
-  position: relative;
-  left: 119px;
-  top: 10px;
-}
-
-.musicas {
-  margin-top: 20px;
+main .musicas-container {
   background-color: #BAF3F6;
-  width: 1468px;
-  height: 167px;
-}
-.musicas .lista-musicas {
-  width: 1216px;
-  height: 51px;
-  position: relative;
-  left: 104px;
-  top: 10px;
-}
-.musicas h1 {
-  position: relative;
-  left: 119px;
-  top: 10px;
+  width: 100vw;
+  padding-bottom: 5px;
+  margin-bottom: 2%;
 }
 
 footer {
   background-color: #D9D9D9;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 8px;
-  width: 1468px;
-  height: 39px;
-  bottom: 0;
+  width: 100vw;
+  height: 5vh;
+  align-content: center;
+  text-align: center;
 }
 footer h3 {
-  width: 264px;
-  height: 21px;
   color: #000000;
   font-size: 14px;
 }/*# sourceMappingURL=style.css.map */

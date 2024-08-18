@@ -1,107 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-*{//configurações globais
-    font-family: 'Inter', 'sans-serif';
+
+$font-pink: #F587DD;
+$bg-blue: #BAF3F6;
+
+*{
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-    $font-pink: #F587DD;
-    $bg-blue: #BAF3F6;
-    $font-size-36: 36px;
-    $font-weight-700: 700;
-    $line-height-43: 43.57px;
-    $font-weight-400: 400;
-    $font-size-24: 24px;
-    $line-height-29: 29.05px;
-
-
-img{
-    width: 237px;
-    height: 229px;
-    margin-top: 116px;
-    margin-left: 120px;
-    border-radius: 150px;
+body{
+    font-family: 'Inter', 'sans-serif';
 }
-//configurando os H1
-h1{
-    width: 388px;
-    height: 50px;
-    font-weight: $font-weight-700;
-    font-size: $font-size-36;
-    line-height: $line-height-43;
+
+h1{//configurando os H1
+    font-weight: 700;
+    line-height: 43.57px;
     color: $font-pink;
 }
-//configuração da bio e das listas
-p, li{
-    font-weight: $font-weight-400;
+
+p, li{//configuração da bio e das listas
+    font-weight: 400;
     color: #000000;
-    line-height: $line-height-29;
-    font-size: $font-size-24;
+    line-height: 25px;
+    font-size: 18px;
 }
-.nome{
-    margin-top: 50px;
-    margin-left: 119px;
-}
-.descricao{
-    margin-top: 25px;
-    margin-left: 119px;
-    width: 1216px;
-    height: 66px;
-}
-.cidade{
-    width: 1216px;
-    height: 66px;
-    margin-top: 12px;
-    margin-left: 120px;
-}
-.games{
-    top: 620px;
-    background-color: $bg-blue;
-    width: 1468px;
-    height: 167px;
-    .lista-games{
-        width: 1216px;
-        height: 66px;
-        position: relative;
-        left: 104px;
-        top: 10px;
+
+main{
+    height: 95vh;
+
+    img{
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    margin-top: 2.5%;
+    margin-left: 7%;
     }
-    h1{
-        position: relative;
-        left: 119px;
-        top: 10px;
+    .nome{
+        margin-top: 0.5em;
+        margin-left: 7%;
+        
     }
-}
-.musicas{
-    margin-top: 20px;
-    background-color: $bg-blue;
-    width: 1468px;
-    height: 167px;
-    .lista-musicas{
-        width: 1216px;
-        height: 51px;
-        position: relative;
-        left: 104px;
-        top: 10px;
+    .descricao, .cidade{
+        margin: 0.5em 7% 0.9em 7%;
     }
-    h1{
-        position: relative;
-        left: 119px;
-        top: 10px;
+    .games-container > h1, .musicas-container > h1{
+        margin-left: 7%;
+    }
+    .lista-games > li, .lista-musicas > li{
+        margin-left: 9%;
+    }
+    .games-container{
+        background-color: $bg-blue;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        width: 100vw;
+        padding-bottom: 5px;
+
+    }
+    .musicas-container{
+        background-color: $bg-blue;
+        width: 100vw;
+        padding-bottom: 5px; 
+        margin-bottom: 2%;
     }
 }
+
 footer{
     background-color: #D9D9D9;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 8px;
-    width: 1468px;
-    height: 39px;
-    bottom: 0;
+    width: 100vw;
+    height: 5vh;
+    align-content: center;
+    text-align: center; 
     h3{
-        width: 264px;
-        height: 21px;
         color: #000000;
         font-size: 14px;
     }
